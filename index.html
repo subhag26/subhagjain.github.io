@@ -140,6 +140,97 @@ a { color: inherit;}
     border: 1px solid #ccc;  
   }
 
+
+
+
+
+
+
+
+  
+
+.nav-wrapper{
+    display: flex ;
+    justify-content: space-between;
+    padding: 38px;
+}
+.left-side{
+    display: flex;
+}
+.nav-wrapper>.left-side> div{
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper{
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s ;
+}
+
+.nav-link-wrapper a{
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.nav-link-wrapper:hover{
+    border-bottom: 1px solid black;
+}
+.nav-link-wrapper a:hover{
+    color:black;
+}
+/* portfolio styles */
+.portfolio-items-wrapper{
+    display:grid;
+   grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item-wrapper{
+    position: relative;
+}
+.portfolio-img-background{
+    height:350px;
+    width:100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img-text-wrapper{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.logo-wrapper>img{
+    width:100%;
+    margin-bottom: 20px;
+}
+.img-text-wrapper .subtitle{
+    transition: 1s;
+    font-weight:600;
+    color: transparent;
+}
+.img-text-wrapper:hover .subtitle{
+    font-weight: 600;
+    color:rgb(0, 26, 255);
+    font-size:50px;
+    
+}
+.img-darken{
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+
+
+
 </style>
 </head>
 <body>  
@@ -181,29 +272,54 @@ a { color: inherit;}
    <a  onclick="closeNav()" ><img src="https://www.freeiconspng.com/thumbs/white-arrow-png/white-down-arrow-png-2.png" class="leftrot" width="50" alt="error"/></a>
   <a href="login.html">Login</a>
   <a href="signup.html">Signup</a>
-  <a href="#">Services</a>
-  <a href="#">About</a>
-  <a href="#">Contact</a>
+  <a href="index.html">Services</a>
+  <a href="about.html">About</a>
+  <a href="about.html">Contact</a>
 </div>
 
 
 <br><br><br>
-<div>
-<table>
-<tr>
-<td style="color:white;font-size: 30px;" >Welcome to our group project. for your conviniece to place the order beforehand either youre in ypur class or hostel, You can Place your order remotely and either have it delivered to you or you can pick it up at the restaurant of your choosing
-This project was made by<br>
-1910990269:Aryan Thakur<br>
-1910990271:Aryan Vasishta<br>
-1910990279:Kashish Babbar<br>
-1910990286:Subhag Jain<br> </td>
-<td><img src="https://images.unsplash.com/photo-1529042410759-befb1204b468?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=333&q=80"></td>
+<br><br><br>
 
-</tr></table>
+
+
+<div class="content-wrapper">
+  <div class="portfolio-items-wrapper">
+
+      <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(https://images.unsplash.com/photo-1552566626-52f8b828add9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div>
+              <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                       <img src="./images/quip.png" alt="">
+                  </div>
+                  <div class="subtitle">ORDER SQUARE ONE</div>
+              </div>
+      
+      </div>
+      <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(https://images.unsplash.com/photo-1560341208-305f47d5e901?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80)"></div>
+              <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                       <img src="./images/eventbrite.png" alt="">
+                  </div>
+                  <div class="subtitle"> ORDER SQUARE TWO</div>
+              </div>
+      
+      </div>
+      <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div>
+              <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                       <img src="./images/devtrunk.png" alt="">
+                  </div>
+                  <div class="subtitle" ><a href="#">ORDER SQUARE THREE</a></div>
+              </div>
+      
+      </div>
+
+
+  </div>
 </div>
-
-
-
 
 
 
