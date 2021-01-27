@@ -1,351 +1,96 @@
-<!DOCTYPE html>
 <html>
-<head>
-  <title>ORDER FOOD NOW</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
-  <link rel="icon" href="https://images.unsplash.com/photo-1529042410759-befb1204b468?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=333&q=80" type="image/x-icon">
-<style>
-	body{
-		background: #121212;
-    font-family: "Amatic SC",sans-serif;
-  }
-  a{
-    text-decoration:none;
-  }
-.main {
-  
-  margin-left: 160px; 
-  font-size: 28px; 
-  padding: 0px 10px;
-}.main{
-  display: inline-block;}
-  .content a {background-color: #1C1C1C;
-  color: white;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-   transition: 0.3s;
-}.content a:hover {
-  background-color:#1C1C1C;
-  color:white;
- 
-}input{margin-top:20px;}
-
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}.content{display:none;}
-.main:hover .content {display: block;transition: 0.3s;}
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color:#1F1F1F;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 35px;
-  color: white;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: black;
-  background-color:white;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-.m{height:20%;
-width:100%;
-background-color:black;}
-hr{color:#1F1F1F;}
-.leftrot  {
-		transform: rotate(90deg);
-		-moz-transform: rotate(90deg);
-		-ms-transform: rotate(90deg);
-		-webkit-transform: rotate(90deg);
-		-o-transform: rotate(90deg);
-	}
-	#blutop{overflow: hidden;
-		background-color: #1F1F1F;
-		padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 20px;
-    position: fixed;
-margin-top: -50px;;
-      margin-right: -40px;
-      text-align: center;
-	}
-	
-
-
-
-
-
-
-
-
-  .topnav .search-container {
-  float: right;
-}
-
-.topnav input[type=text] {
-  padding: 6px;
-  margin-top: 8px;
-  font-size: 17px;
-  border: none;
-}
-
-.topnav .search-container button {
-  float: right;
-  padding: 6px 10px;
-  margin-top: 8px;
-  margin-right: 16px;
-  background: rgb(68, 68, 68);
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-}
-a { color: inherit;}
-.topnav .search-container button:hover {
-  background: rgb(92, 92, 92);
-}
-
-
-.topnav a, .topnav input[type=text], .topnav .search-container button {
-    float: none;
-    display: block;
-    text-align: left;
-    width: 100%;
-    margin: 0;
-    padding: 14px;
-  }
-  .topnav input[type=text] {
-    border: 1px solid #ccc;  
-  }
-
-  .topnav input[type=text] {
-    border: 1px solid #ccc;  
-  }
-
-
-
-
-
-
-
-
-  
-
-.nav-wrapper{
-    display: flex ;
-    justify-content: space-between;
-    padding: 38px;
-}
-.left-side{
-    display: flex;
-}
-.nav-wrapper>.left-side> div{
-    margin-right: 20px;
-    font-size: 0.9em;
-    text-transform: uppercase;
-}
-
-.nav-link-wrapper{
-    height: 22px;
-    border-bottom: 1px solid transparent;
-    transition: border-bottom 0.5s ;
-}
-
-.nav-link-wrapper a{
-    color: #8a8a8a;
-    text-decoration: none;
-    transition: color 0.5s;
-}
-.nav-link-wrapper:hover{
-    border-bottom: 1px solid black;
-}
-.nav-link-wrapper a:hover{
-    color:black;
-}
-/* portfolio styles */
-.portfolio-items-wrapper{
-    display:grid;
-   grid-template-columns: 1fr 1fr 1fr;
-}
-
-.portfolio-item-wrapper{
-    position: relative;
-}
-.portfolio-img-background{
-    height:350px;
-    width:100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.img-text-wrapper{
-    position: absolute;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    text-align: center;
-    padding-left: 100px;
-    padding-right: 100px;
-}
-.logo-wrapper>img{
-    width:100%;
-    margin-bottom: 20px;
-}
-.img-text-wrapper .subtitle{
-    transition: 1s;
-    font-weight:600;
-    color: transparent;
-}
-.img-text-wrapper:hover .subtitle{
-    font-weight: 600;
-    color:rgb(255, 255, 255);
-    font-size:50px;
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
     
-}
-.img-darken{
-    transition: 1s;
-    filter: brightness(5%);
-}
-
-
-
-
-</style>
-</head>
-<body>  
-  <div id="blutop" style="width: 100%;">
-  <table style="width: 100%;border: 0px;margin-left: auto;margin-right: auto;">
-    <tr><br></tr>
-<tr>
-  <th><a style="width: 10%;float: left;"> <span style="font-size:35px;cursor:pointer;color:white;" onclick="openNav()">&#9776;</span></a></th>
-  <th  style="font-size: 60px;color: whitesmoke;text-align: center;display: block;width: 100%;margin-left: auto; margin-right: -150px;" ><a href="index.html" style="text-decoration: none;">Food Order <img src="files/images/CU_logo.png" width="80px"></a>
-  </th>
-<th style="width: 50%;">
-  
-<div class="topnav">
-  <div class="search-container">
-    <form >
-      <input type="text" placeholder="Search.. " name="search">
-      <button type="submit"><b style="color: #ccc; ">Submit</b></button>
-    </form>
-  </div>
-  </div>
-
-
-
-
-</th>
-</tr>
-<tr></tr>
-
-  </table>
-	
-	
-	</div>
-	
-	
-	
-	
-
-<div id="mySidenav" class="sidenav">
-   <a  onclick="closeNav()" ><img src="https://www.freeiconspng.com/thumbs/white-arrow-png/white-down-arrow-png-2.png" class="leftrot" width="50" alt="error"/></a>
-  <a href="login.html">Login</a>
-  <a href="signup.html">Signup</a>
-  <a href="index.html">Services</a>
-  <a href="about.html">About</a>
-  <a href="about.html">Contact</a>
-</div>
-
-
-<br><br><br>
-<br><br><br>
-
-
-
-<div class="content-wrapper">
-  <div class="portfolio-items-wrapper">
-
-      <div class="portfolio-item-wrapper">
-          <div class="portfolio-img-background" style="background-image:url(https://images.unsplash.com/photo-1552566626-52f8b828add9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div>
-              <div class="img-text-wrapper">
-                  <div class="logo-wrapper">
-                       <img src="files/images/sq1.png" alt="">
-                  </div>
-                  <div class="subtitle"><a href="menu1.html">ORDER SQUARE ONE</a></div>
-              </div>
-      
-      </div>
-      <div class="portfolio-item-wrapper">
-          <div class="portfolio-img-background" style="background-image:url(https://images.unsplash.com/photo-1560341208-305f47d5e901?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80)"></div>
-              <div class="img-text-wrapper">
-                  <div class="logo-wrapper">
-                       <img src="files/images/sq2-2.png" alt="">
-                  </div>
-                  <div class="subtitle"><a href="menu2.html">ORDER SQUARE TWO</a> </div>
-              </div>
-      
-      </div>
-      <div class="portfolio-item-wrapper">
-          <div class="portfolio-img-background" style="background-image:url(https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div>
-              <div class="img-text-wrapper">
-                  <div class="logo-wrapper">
-                       <img src="files/images/sq3.png" alt="">
-                  </div>
-                  <div class="subtitle" ><a href="menu3.html" >ORDER SQUARE THREE</a></div>
-              </div>
-      
-      </div>
-
-
-  </div>
-</div>
-
-
-
-
-
-
-<p style="font-size:30px ;color:whitesmoke">for your conviniece to place the order beforehand either youre in your class or hostel, You can Place your order remotely and either have it delivered to you or you can pick it up at the restaurant of your choosing</p>
-
-
-
-
-<script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "200px";
-  document.getElementById("main").style.marginLeft = "250px";
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
-}
-</script>
-   
-</body>
+        <nav>
+            <font face="Segoe UI Light">
+            
+               <a href="index.html"> <img src="assets/img/logo.png" id="logo"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            </font>
+        </nav>
+    <section class="sec1">
+        <center>
+            <img id="centerhero" src="assets/img/logobig.png"><br>
+            <font face="Segoe UI Light" color="white" size="5">
+                Food Ordering Made Easy<br><br>
+           
+                
+                <img id="down" src="assets/img/down.gif">
+            </font>
+        </center>
+        </section>
+        <section class="sectionwhite"><center>
+            <label id="ab">Get Your Food In 4 Simple Steps</label></center><br><br>
+            <center>
+                <div id="stepbox">
+                <img id="stepsimg" src="assets/img/steps/1.png"><br>
+                    <b>1. Search</b><br><br>
+                    Find restaurants that deliver to you by entering your address.
+                </div>
+                <div id="stepbox">
+                <img id="stepsimg" src="assets/img/steps/2.png"><br>
+                    <b>2. Choose</b><br><br>
+                        Browse hundreds of menus to find the food you like.
+                </div>
+                <div id="stepbox">
+                <img id="stepsimg" src="assets/img/steps/3.png"><br>
+                    <b>3. Pay</b><br><br>
+                        Pay fast & secure online or on cash on delivery.
+                </div>
+                <div id="stepbox">
+                <img id="stepsimg" src="assets/img/steps/4.png"><br>
+                    <b>4. Enjoy</b><br><br>
+                        Food is prepared & delivered to your door.
+                </div>
+                
+            
+            </center>
+            
+            
+        </section>
+         <section class="sectionred"><center>
+             <label id="ab2">Choose your restaurant</label><br><br>
+             
+             <div id="restbox">
+                <img id="restboximg" src="assets/img/rest1.png">
+                 <button onclick="location.href='rest1.html';" class="selectbtn">McDonald`s</button>
+             </div>
+             
+             
+             <div id="restbox">
+                <img id="restboximg" src="assets/img/rest2.jpg">
+                 <button onclick="location.href='rest2.html';" class="selectbtn">Burger King</button>
+             </div>
+             
+             
+             <div id="restbox">
+                <img id="restboximg" src="assets/img/rest3.png">
+                 <button onclick="location.href='rest3.html';" class="selectbtn">Dominos Pizza</button>
+             </div>
+             
+             
+             <div id="restbox">
+                <img id="restboximg" src="assets/img/rest4.jpg">
+                 <button onclick="location.href='rest4.html';" class="selectbtn" disabled>Subway</button>
+             </div>
+             
+             
+             </center>
+        </section>
+        
+<section class="footer">
+        <center>
+        <img src="assets/img/logo.png" height="100vh"><br>
+            Website Developed By <b>Subhag Jain</b>
+    </center>
+        </section>
+        
+    </body>
 </html>
